@@ -53,4 +53,4 @@ obj.dong
 // Object.defineProperty()对数组无效
 // 分析：改变数组方法只有七个
 // 解决方案：替换数组实例的原型方法，让他们在修改数组同时......
-obj.arr.push(5)   //到了32分23秒
+obj.arr.push(5)  
