@@ -8,23 +8,28 @@
 </head>
 <body>
   <div id="app">
+    <!-- 验证插值 -->
     <p>{{counter}}</p>
-    <p>{{counter}}</p>
+    <!-- 验证指令 -->
+    <p k-text="counter"></p>
+    <p k-html="desc"></p>
   </div>
 
   <script src="kvue.js"></script>
+  <script src="compile.js"></script>
 
   <script>
     const app = new KVue({
       el: '#app',
       data: {
-        counter: 1
+        counter: 1,
+        desc: '<span style="color:red">kvue可还行</span>'
       },
     })
 
-    setInterval(()=>{
-      app.counter++
-    },1000)
+    // setInterval(()=>{
+    //   app.counter++
+    // },1000)
   </script>
 </body>
 </html>
